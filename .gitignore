@@ -111,3 +111,4 @@ src/ome_types/model/
 src/ome_types/_version.py
 docs/source/_autosummary
 .benchmarks/
+src/ome_types/loci_tools.jar

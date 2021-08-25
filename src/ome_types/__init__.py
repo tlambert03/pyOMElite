@@ -14,15 +14,16 @@ except ModuleNotFoundError as e:
         "you may need to run 'python -m src.ome_autogen'" + str(e)
     ) from None
 from .schema import to_dict, to_xml, validate  # isort:skip
-from ._convenience import from_tiff, from_xml  # isort:skip
+from ._convenience import from_tiff, from_xml, from_bioformats  # isort:skip
 
 __all__ = [
-    "to_dict",
-    "validate",
-    "from_xml",
-    "to_xml",
+    "from_bioformats",
     "from_tiff",
-    "OME",
+    "from_xml",
     "model",
+    "OME",
+    "to_dict",
+    "to_xml",
     "ureg",
+    "validate",
 ]
